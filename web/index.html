@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Huffman Coding</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Huffman Coding</h1>
+
+
+    <section class="card">
+
+        <h2>Input Text</h2>
+
+        <textarea
+            id="inputText"
+            placeholder="Enter text to encode..."
+            spellcheck="false"></textarea>
+
+        <button id="encodeButton">
+            Encode
+        </button>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>Huffman Codes</h2>
+
+        <div id="codesContainer">
+
+            <p class="placeholder">
+                Huffman codes will appear here.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>Encoded Bit String</h2>
+
+        <textarea
+            id="encodedBits"
+            placeholder="Encoded bits will appear here..."
+            readonly
+            spellcheck="false"></textarea>
+
+        <button id="decodeButton">
+            Decode
+        </button>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>Decoded Text</h2>
+
+        <textarea
+            id="decodedText"
+            placeholder="Decoded text will appear here..."
+            readonly
+            spellcheck="false"></textarea>
+
+    </section>
+
+
+    <div id="status"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
