@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huffman Coding</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Huffman Coding</h1>
+            <p>Encode and decode text using Huffman coding.</p>
+        </header>
+
+        <section class="panel">
+            <h2>Original Text</h2>
+
+            <textarea
+                id="inputText"
+                placeholder="Enter text to encode..."
+                spellcheck="false"
+            ></textarea>
+
+            <button id="encodeBtn">Encode Text</button>
+            <p id="status" class="status" aria-live="polite"></p>
+        </section>
+
+        <section class="panel">
+            <h2>Character Frequencies</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Character</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody id="frequencyTable"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Huffman Codes</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Character</th>
+                            <th>Code</th>
+                </tr>
+                    </thead>
+                    <tbody id="codeTable"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="section-heading">
+                <h2>Encoded Bits</h2>
+                <button id="copyEncodedBtn" class="secondary">
+                    Copy
+                </button>
+            </div>
+
+            <textarea
+                id="encodedText"
+                placeholder="Encoded binary string will appear here..."
+                spellcheck="false"
+            ></textarea>
+
+            <button id="decodeBtn">Decode Bits</button>
+        </section>
+
+        <section class="panel">
+            <div class="section-heading">
+                <h2>Decoded Text</h2>
+                <button id="copyDecodedBtn" class="secondary">
+                    Copy
+                </button>
+            </div>
+
+            <textarea
+                id="decodedText"
+                placeholder="Decoded text will appear here..."
+                readonly
+                spellcheck="false"
+            ></textarea>
+        </section>
+
+        <footer>
+            Huffman Coding Demonstration
+        </footer>
+    </div>
+</body>
+</html>
